@@ -648,7 +648,7 @@ public class ArkFile : Archive
 
         // Only ark v9 seems to have this (0x‭7D401F60 when entry size not 0‬)
         if (extraFlag)
-            aw.Write((int)((entry.Size <= 0) ? 0 : 0x7D401F60));
+            aw.Write((int)((entry.Size <= 0) ? 0 : 0x7215D190);
     }
 
     private void WriteClassicFileEntries(AwesomeWriter aw)
